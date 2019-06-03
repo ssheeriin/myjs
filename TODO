@@ -1,0 +1,19 @@
+JavaScript: 
+    ☐ Variables
+        ☐ var , let , const
+        ☐ varibale hoisting
+        ☐ function hoisting
+        ☐
+    ☐ Data structures and types
+        ☐ boolean, null, undefined, Number, BigInt, String, Symbol (new) - Primitives
+        ☐ Object 
+    ☐ Literals
+        ☐ Array, boolean , numeric, float literals
+        ☐ Object literals
+        ☐ String literals - siglew & double quotes , back-tick ` (ES2015 - supports templating)
+    ☐ Control flow and error handling
+        ☐ block statements
+        ☐ 
+
+
+
