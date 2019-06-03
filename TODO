@@ -58,7 +58,11 @@ JavaScript:
         ☐ primary -> this, grouping ()
         ☐ LHS (left hand side) -> new , super, *spread - allows an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) are expected.
 
-    Numbers and dates:
-            
+    Numbers and dates: 
+    Indexed Collections:
+        ☐ Array object & Typed Arrays
+    Keyed Collections:
+        ☐ Maps & Sets@done(19-06-03 23:01)
 
+        
                 
