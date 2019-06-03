@@ -8,7 +8,8 @@ function variableDeclaration() {
   //  console.log(y); //err
   console.log(z);
 }
-
+console.log("variableDeclaration")
+console.log("--------------------");
 variableDeclaration();
 
 
@@ -19,6 +20,8 @@ function testVariableHoisting() {
   var t = 2;
 }
 
+console.log("testVariableHoisting");
+console.log("--------------------");
 testVariableHoisting();
 
 var car = {
@@ -38,6 +41,8 @@ function testStringLiterals() {
 
   console.log(greet);
 }
+console.log("testStringLiterals");
+console.log("--------------------");
 
 testStringLiterals();
 
@@ -49,6 +54,8 @@ function testBlockStatements() {
 console.log(ss);
 // let and const are block scoped
 }
+console.log("testBlockStatements");
+console.log("--------------------");
 
 testBlockStatements();
 
@@ -67,5 +74,36 @@ function testExceptionHandling() {
     } 
 }
 
+console.log("testExceptionHandling");
+console.log("--------------------");
+
 testExceptionHandling();
 
+function testClosure() {
+    var pi = 3.14;
+    var total = 0;
+    return function (r) {
+        let tmp = pi * r * r;
+        total += tmp;
+        return total;
+    }
+}
+
+console.log("testClosure");
+console.log("--------------------");
+
+var tmp = testClosure();
+console.log(testClosure()(10));
+console.log(tmp(10));
+
+
+function testArrowFunctions() {
+  var list = ["one", "two", "three"];
+  console.log(list.map(function(elt) {return elt.length;}));
+  console.log(list.map(elt => elt.length));
+}
+
+console.log("testArrowFunctions");
+console.log("--------------------");
+
+testArrowFunctions();

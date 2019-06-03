@@ -39,9 +39,17 @@ JavaScript:
             ☐ variable preservation
             ☐ Multiply-nested functions
             ☐ Name conflicts - inner scopes take precedence
-        Closure:
+        ☐ Closure
             ☐ the inner function has access to the scope of the outer function
             ☐ variables and functions defined in the outer function will live longer if the inner function manages to survive beyond the life of the outer function
+        ☐ arguments object
+        ☐ fn parameters
+            ☐ default - undefined, can be set a value  (like named params)
+            ☐ rest params (same as varargs in java)
+        ☐ Arrow Functions
+            ☐ always annonymous (think lambdas in java)
+            ☐ does not have its own this , arguments, super, or new.target
+
 
 
 
