@@ -1,22 +1,21 @@
 JavaScript: 
     Variables:
-        ☐ var , let , const
+        ☐ var , *let , *const
         ☐ varibale hoisting
         ☐ function hoisting
-        ☐
     Data structures and types:
-        ☐ boolean, null, undefined, Number, BigInt, String, Symbol (new) - Primitives
+        ☐ boolean, null, undefined, Number, BigInt, String, *Symbol (new) - Primitives
         ☐ Object 
     Literals:
         ☐ Array, boolean , numeric, float literals
         ☐ Object literals
-        ☐ String literals - siglew & double quotes , back-tick ` (ES2015 - supports templating)
+        ☐ String literals - siglew & double quotes , *back-tick ` (ES2015 - supports templating)
     Control flow and error handling:
         ☐ block statements
         ☐ Conditional statements 
             ☐ if...else
                 ☐ false values ->  false , undefined, null, 0 , NaN, the empty string ("")
-            ☐ switch  - breaking sme as java
+            ☐ switch  - breaking same as java
         ☐ Exception handling
             ☐ try...catch...finally (same as in java)
             ☐ throw 
@@ -32,7 +31,7 @@ JavaScript:
         ☐ for...of statement - ierable obj (Array, Map, Set, arguments object etc)
     Functions:
         ☐ function definition vs function expression
-            ☐ function expression - annonymous, named ; convenient when passing a function as an argument to another function
+            ☐ function expression - annonymous or named ; convenient when passing a function as an argument to another function
             ☐ a function can be defined based on a condition
             ☐ can be `hoisted` (not expressions)
         ☐ recursion, nested
@@ -45,12 +44,21 @@ JavaScript:
         ☐ arguments object
         ☐ fn parameters
             ☐ default - undefined, can be set a value  (like named params)
-            ☐ rest params (same as varargs in java)
-        ☐ Arrow Functions
+            ☐ *rest params (same as varargs in java)
+        ☐  *Arrow Functions 
             ☐ always annonymous (think lambdas in java)
             ☐ does not have its own this , arguments, super, or new.target
+    Operators:
+        ☐ assignment , comparison, arithmatic, bitwise, logical, string, ternary, comma operator, unary, relational
+        ☐ unary -> delete , typeof , void 
+        ☐ relational -> in , instanceof, 
+    Expressions: 
+        ☐ any valid unit of code that resolves to a value.
+        ☐ arithmetic, string, logical, primary, LHS
+        ☐ primary -> this, grouping ()
+        ☐ LHS (left hand side) -> new , super, *spread - allows an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) are expected.
 
-
-
+    Numbers and dates:
+            
 
                 
