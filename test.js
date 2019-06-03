@@ -41,4 +41,30 @@ function testStringLiterals() {
 
 testStringLiterals();
 
+function testBlockStatements() {
+  var ss = 10;
+  {
+    var ss =20;
+  }
+console.log(ss);
+// let and const are block scoped
+}
 
+testBlockStatements();
+
+function testExceptionHandling() {
+    let val = 10;
+
+    try {
+      throw val;
+    } catch (e){
+      console.log("err caught - "  + e);
+    }
+    try {
+      throw "An Error"
+    } catch (error) {
+      console.log("another error caught - " + error);
+    } 
+}
+
+testExceptionHandling();

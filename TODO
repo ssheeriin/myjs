@@ -13,7 +13,13 @@ JavaScript:
         ☐ String literals - siglew & double quotes , back-tick ` (ES2015 - supports templating)
     ☐ Control flow and error handling
         ☐ block statements
-        ☐ 
-
-
-
+        ☐ Conditional statements 
+            ☐ if...else
+                ☐ false values ->  false , undefined, null, 0 , NaN, the empty string ("")
+            ☐ switch  - breaking sme as java
+        ☐ Exception handling
+            ☐ try...catch...finally (same as in java)
+            ☐ throw 
+                ☐ any object can be thrown in JavaScript
+                ☐ throw `expression`;
+                
