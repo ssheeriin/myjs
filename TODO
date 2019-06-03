@@ -1,17 +1,17 @@
 JavaScript: 
-    ☐ Variables
+    Variables:
         ☐ var , let , const
         ☐ varibale hoisting
         ☐ function hoisting
         ☐
-    ☐ Data structures and types
+    Data structures and types:
         ☐ boolean, null, undefined, Number, BigInt, String, Symbol (new) - Primitives
         ☐ Object 
-    ☐ Literals
+    Literals:
         ☐ Array, boolean , numeric, float literals
         ☐ Object literals
         ☐ String literals - siglew & double quotes , back-tick ` (ES2015 - supports templating)
-    ☐ Control flow and error handling
+    Control flow and error handling:
         ☐ block statements
         ☐ Conditional statements 
             ☐ if...else
@@ -22,4 +22,27 @@ JavaScript:
             ☐ throw 
                 ☐ any object can be thrown in JavaScript
                 ☐ throw `expression`;
+    Loops and iteration:
+        ☐ for statement 
+        ☐ do...while statement
+        ☐ while statement
+        ☐ labeled statement
+        ☐ break & continue
+        ☐ for...in statement - iterates a specified variable over obj
+        ☐ for...of statement - ierable obj (Array, Map, Set, arguments object etc)
+    Functions:
+        ☐ function definition vs function expression
+            ☐ function expression - annonymous, named ; convenient when passing a function as an argument to another function
+            ☐ a function can be defined based on a condition
+            ☐ can be `hoisted` (not expressions)
+        ☐ recursion, nested
+            ☐ variable preservation
+            ☐ Multiply-nested functions
+            ☐ Name conflicts - inner scopes take precedence
+        Closure:
+            ☐ the inner function has access to the scope of the outer function
+            ☐ variables and functions defined in the outer function will live longer if the inner function manages to survive beyond the life of the outer function
+
+
+
                 
