@@ -37,7 +37,7 @@ function Engineer() {
 Engineer.prototype = Object.create(Worker.prototype);
 Engineer.prototype.constructor = Engineer
 
-var ranga = new Manager
+var sre = new Manager
 var pb = new Employee
 var sn = new SalesPerson
 var ss = new Worker
@@ -45,6 +45,7 @@ var sj = new Engineer
 
 for (const prop in sj) {
     console.log(prop + " = " + sj[prop]);
-    
 }
+
+
 
