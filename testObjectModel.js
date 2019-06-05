@@ -42,3 +42,9 @@ var pb = new Employee
 var sn = new SalesPerson
 var ss = new Worker
 var sj = new Engineer
+
+for (const prop in sj) {
+    console.log(prop + " = " + sj[prop]);
+    
+}
+
