@@ -62,7 +62,41 @@ JavaScript:
     Indexed Collections:
         ☐ Array object & Typed Arrays
     Keyed Collections:
-        ☐ Maps & Sets@done(19-06-03 23:01)
-
+        ☐ Maps & Sets
+        ☐ to Arrays from Set
+    Objects:
+        ☐ objects and properties
+        ☐ enumerating properties
+        ☐ creating objects
+            ☐ object initializers
+            ☐ construtor fn
+            ☐ Object.create
+        ☐ Indexing object properties
+        ☐ Defining methods
+        ☐ `this` for object reference
+        ☐ defining settergs and getters
+        ☐ delete property
+        ☐ Comparing Objects
+            ☐ objects are reference types
+            ☐ Only comparing the same object reference with itself yields true. 
+    Object Model:
+        ☐ Class-based vs. prototype-based languages
+        ☐ prototypical object, an object used as a template 
+        ☐ any object can be associated as the prototype for another object allowing inheritance
+        ☐ defining a class
+            ☐ java constructors vs JS constructor functions
+            ☐ `JavaScript classes, introduced in ECMAScript 2015, are primarily syntactical sugar over JavaScript's existing prototype-based inheritance. The class syntax does not introduce a new object-oriented inheritance model to JavaScript.`
+        ☐ subclass and inheritance
+            ☐  Comparison of class-based (Java) and prototype-based (JavaScript) object systems
+                    `Category | Class-based (Java) | Prototype-based (JavaScript)`
+                    Class vs. Instanced | Class and instance are distinct entities | All objects can inherit from another object.
+                    Definitiond | Define a class with a class definition; instantiate a class with constructor methods | Define and create a set of objects with constructor functions.
+                    Creation of new object | Create a single object with the new operator | Same.
+                    Construction of object hierarchy | Construct an object hierarchy by using class definitions to define subclasses of existing classes.| Construct an object hierarchy by assigning an object as the prototype associated with a constructor function.
+                    Inheritance model | Inherit properties by following the class chain.| Inherit properties by following the prototype chain.
+                    Extension of properties	 | Class definition specifies all properties of all instances of a class. Cannot add properties dynamically at run time. | Constructor function or prototype specifies an initial set of properties. Can add or remove properties dynamically to individual objects or to the entire set of objects.
+            ☐ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model
+    Object Inheritance:
+            ☐ 
         
                 
