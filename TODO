@@ -9,7 +9,7 @@ JavaScript:
     Literals:
         ☐ Array, boolean , numeric, float literals
         ☐ Object literals
-        ☐ String literals - siglew & double quotes , *back-tick ` (ES2015 - supports templating)
+        ☐ String literals - single & double quotes , *back-tick ` (ES2015 - supports templating)
     Control flow and error handling:
         ☐ block statements
         ☐ Conditional statements 
@@ -96,7 +96,29 @@ JavaScript:
                     Inheritance model | Inherit properties by following the class chain.| Inherit properties by following the prototype chain.
                     Extension of properties	 | Class definition specifies all properties of all instances of a class. Cannot add properties dynamically at run time. | Constructor function or prototype specifies an initial set of properties. Can add or remove properties dynamically to individual objects or to the entire set of objects.
             ☐ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model
-    Object Inheritance:
-            ☐ 
-        
-                
+            ☐ Inheriting properties
+                ☐ object run time peoperties
+                ☐ explicitly set up the prototype to ensure dynamic inheritance
+                ☐ Local versus inherited values - doing lookup in an object 
+                ☐ Determining instance relationships 
+                    - __proto__ set when object is constructed; value set to constructors `prototype` property 
+                    - new Foo() => __proto__ = Foo.prototype
+                    - Every object has a `__proto__` object property (except Object)
+                    - Every function has a `prototype` object property
+                    - `instanceof` operator tests an object against a function and returns true if the object inherits from the function prototype
+                    - eg:  person <|-- employee <|-- engineer
+                         - var sherin = new Engineer => 
+                                - sherin.__proto__ == Engineer.prototype
+                                - sherin.__proto__.proto__ == Employee.prototype          
+                                - sherin.__proto__.__proto__ == Person.prototype           
+                                - sherin.__proto__.__proto__.__proto__ == Object.prototype           
+                                - sherin.__proto__.__proto__.__proto__.__proto__ == null
+                                - => TRUE
+                ☐ Global information in constructors
+                    -  problem with `Foo.prototype = new Bar`; calls the constructor with each inheritance hierarchy and will cause issue if global variables are used in `Bar` constructor
+                    - 
+                ☐ No multiple inheritance
+                    - JavaScript does not support multiple inheritance.
+                    -  an object has a single associated prototype, JavaScript cannot dynamically inherit from more than one prototype chain.
+                    - `Note:` you can have a constructor function call more than one other constructor function within it. This gives the illusion of multiple inheritance, but any new properties in other objects constructor prototype is not inherited
+                    

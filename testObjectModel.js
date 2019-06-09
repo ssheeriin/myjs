@@ -1,37 +1,35 @@
-function Employee() {
-    this.name = '';
-    this.department = 'general';
+function Employee(name, department) {
+    this.name = name || '';
+    this.department = department || 'general';
 }
 
-function Manager () {
-    Employee.call(this);
-    this.reports = [];
+function Manager (reports, name, department) {
+    Employee.call(this, name , department);
+    this.reports = reports || [];
 }
 
 Manager.prototype = Object.create(Employee.prototype)
 Manager.prototype.constructor = Manager;
 
-function Worker() {
-    Employee.call(this);
-    this.projects = [];
+function Worker(name, department, projects) {
+    Employee.call(this, name , department);
+    this.projects = projects || [];
 }
 
 Worker.prototype = Object.create(Employee.prototype);
 Worker.prototype.constructor = Worker
 
-function SalesPerson() {
-    Worker.call(this);
-    this.department = 'Sales';
-    this.target = 100;
+function SalesPerson(name, department, target) {
+    Worker.call(this, name, department);
+    this.target = target || 100;
 }
 
 SalesPerson.prototype = Object.create(Worker.prototype);
 SalesPerson.prototype.constructor = SalesPerson
 
-function Engineer() {
-    Worker.call(this);
-    this.department = 'engineering';
-    this.machine = ''
+function Engineer(name, department, projects, machine) {
+    Worker.call(this, name, department, projects);
+    this.machine = machine || '';
 }
 
 Engineer.prototype = Object.create(Worker.prototype);
@@ -47,5 +45,18 @@ for (const prop in sj) {
     console.log(prop + " = " + sj[prop]);
 }
 
+
+sj.bonus = 1000;
+
+console.log("bonus: " + sj.bonus);
+console.log("bonus: " + ss.bonus);
+Employee.prototype.bonus = 0;
+console.log("bonus: " + sj.bonus);
+console.log("bonus: " + ss.bonus);
+
+var ss1 = new Engineer("sherin", "", ['java', 'js', 'kotlin'], 'mac');
+for (const prop in ss1) {
+    console.log("Property " + prop + " has value " + ss1[prop]);
+}
 
 
