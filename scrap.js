@@ -1,20 +1,7 @@
-function Person(name, age) {
-  this.name = name || "";
-  this.age = age || -1;
-}
+var arr = [8,9];
+var arr2 = [1,2,3,...arr, 4,5,6]
 
-function Emp(name, age, empId) {
-  Person.call(this, name, age);
-  this.empId = empId || "";
-}
-
-Emp.prototype = Object.create(Person.prototype);
-Emp.prototype.constructor = Emp;
-
-var e1 = new Emp("sherin", 10, "E1");
-
-e1.department = 'dept';
-
-console.log(e1);
-console.log(Emp.prototype);
-console.log(Emp.prototype.constructor);
+for (const n of arr2) {
+  console.log(n);
+  
+} 

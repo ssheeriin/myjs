@@ -1,4 +1,5 @@
 JavaScript: 
+    Hello World:
     Variables:
         ☐ var , *let , *const
         ☐ varibale hoisting
@@ -28,12 +29,13 @@ JavaScript:
         ☐ labeled statement
         ☐ break & continue
         ☐ for...in statement - iterates a specified variable over obj
-        ☐ for...of statement - ierable obj (Array, Map, Set, arguments object etc)
+        ☐ for...of statement - iterable obj (Array, Map, Set, arguments object etc)
     Functions:
         ☐ function definition vs function expression
             ☐ function expression - annonymous or named ; convenient when passing a function as an argument to another function
             ☐ a function can be defined based on a condition
             ☐ can be `hoisted` (not expressions)
+            ☐ primitives args passed by value
         ☐ recursion, nested
             ☐ variable preservation
             ☐ Multiply-nested functions
@@ -50,20 +52,38 @@ JavaScript:
             ☐ does not have its own this , arguments, super, or new.target
     Operators:
         ☐ assignment , comparison, arithmatic, bitwise, logical, string, ternary, comma operator, unary, relational
-        ☐ unary -> delete , typeof , void 
-        ☐ relational -> in , instanceof, 
+        ☐ unary -> 
+            ☐ delete - deletes an object, an object's property, or an element at a specified index in an array 
+            ☐ typeof - returns a string indicating the type of the unevaluated operand. 
+            ☐ void `expression`- specifies an expression to be evaluated without returning a value 
+        ☐ relational -> 
+            ☐ in - returns true if the specified property is in the specified object 
+            ☐ instanceof -  returns true if the specified object is of the specified object type
     Expressions: 
         ☐ any valid unit of code that resolves to a value.
         ☐ arithmetic, string, logical, primary, LHS
-        ☐ primary -> this, grouping ()
-        ☐ LHS (left hand side) -> new , super, *spread - allows an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) are expected.
+        ☐ primary -> this, grouping () - controls precedence
+        ☐ LHS (left hand side) -> 
+            ☐ new 
+            ☐ super - in classes
+            ☐ *spread - allows an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) are expected.
 
-    Numbers and dates: 
+    Numbers and dates:  
+        ☐ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Numbers_and_dates
+    Text: 
+        ☐ String
+            ☐ string literal & String object
+            ☐ multiline strings 
+            ☐ embedded expressions in string
     Indexed Collections:
         ☐ Array object & Typed Arrays
+            ☐ creating arrays - Array(1,..,n) | new Array(1,..,n) || [1,..,n]
+            ☐ population, refering, interation 
+            ☐ assigning to the length property. 
+            ☐ Array methods - concat, join, push, pop, shift, slice , splice , reverse, sort, forEach, map, filter , reduce
     Keyed Collections:
         ☐ Maps & Sets
-        ☐ to Arrays from Set
+        ☐ to Arrays from Set - Array.from(set)
     Objects:
         ☐ objects and properties
         ☐ enumerating properties
